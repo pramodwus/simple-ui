@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>Bell</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Bellurbis</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">      
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Dheeraj Kishore</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="active treeview menu-open">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+            <ul class="treeview-menu">
+                <li><a href="index1.html"><i class="fa fa-circle-o"></i>Front Desk</a></li>
+                <li><a href="index2.html"><i class="fa fa-circle-o"></i>Lab Assistant</a></li>
+                <li><a href="index3.html"><i class="fa fa-circle-o"></i>Back Office</a></li>
+                <li class="active"><a href="index4.html"><i class="fa fa-circle-o"></i>Admin</a></li>
+            </ul>        
+        </li>
+        <!-- <li class="treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Admin</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+              <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Open URL</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Login with given user id</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Add/Modify User</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Add/Modify Doctors</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Add/Modify the list</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Add Modify Test report</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>User specific screen access</a></li>
+              </ul>        
+          </li> -->
+      </ul>        
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Admin
+        <small>Panel</small>
+      </h1>     
+    </section>
+    <section class="content-header">         
+        <div class="box-header ui-sortable-handle" style="cursor: move;">  
+            <!-- <h1>
+                Admin
+                <small>Panel</small>
+              </h1>  -->
+            <!-- tools box -->
+            <!-- <div class="pull-right box-tools">
+                <button type="button" class="btn bg-olive btn-flat"><a href="#" style="text-decoration:none;color:#fff;">Add New User</a></button>
+                <button type="button" class="btn bg-olive btn-flat"><a href="#" style="text-decoration:none;color:#fff;">Edit User</a></button>
+            </div> -->
+            <div class="row">
+              <div class="col-md-6">
+                  <!-- Horizontal Form -->
+                  <div class="box box-info">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Add New User</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal">
+                      <div class="box-body">
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Email Id</label>
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control disabledboxes" id="emailId" placeholder="Enter your email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control disabledboxes" id="pwd" placeholder="Enter Password">
+                        </div>
+                      </div>
+                      
+                     
+                    </div>
+                      <!-- /.box-body -->
+                      <div class="box-footer">
+                        <button type="submit" class="btn btn-success" id="button1">Add New User</button>
+                      </div>
+                      <!-- /.box-footer -->
+                    </form>
+                  </div>
+                  </div>
+                  <!-- /.box -->
+                  <div class="col-md-6">
+                    <!-- Horizontal Form -->
+                    <div class="box box-info">
+                      <div class="box-header with-border">
+                        <h3 class="box-title">Modify User</h3>
+                      </div>
+                      <!-- /.box-header -->
+                      <!-- form start -->
+                      <form class="form-horizontal">
+                        <div class="box-body">
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Email Id</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control disabledboxes" id="emailId" placeholder="Enter your email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Password</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control disabledboxes" id="pwd" placeholder="Enter Password">
+                          </div>
+                        </div>
+                        
+                       
+                      </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                          <button type="submit" class="btn btn-success" id="button1">Modify Existing User</button>
+                        </div>
+                        <!-- /.box-footer -->
+                      </form>
+                    </div>
+                    </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                <!-- Horizontal Form -->
+                <div class="box box-info">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Add New Doctor</h3>
+                  </div>
+                  <!-- /.box-header -->
+                  <!-- form start -->
+                  <form class="form-horizontal">
+                    <div class="box-body">
+                    <div class="form-group">
+                      <label for="" class="col-sm-3 control-label">Name</label>
+                      <div class="col-sm-8">
+                        <input type="email" class="form-control disabledboxes" id="emailId" placeholder="Enter your email">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="" class="col-sm-3 control-label">Sex</label>
+                      <div class="col-sm-8">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">
+                            Male
+                          </label>
+                        </div>
+          
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">
+                            Female
+                          </label>
+                        </div>
+          
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">
+                            Others
+                          </label>
+                        </div>
+                      </div>
+                  </div>
+                    <div class="form-group">
+                      <label for="" class="col-sm-3 control-label">Address</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control disabledboxes" id="pwd" placeholder="Enter Address">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="col-sm-3 control-label">Phone Number</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control disabledboxes" id="pwd" placeholder="Enter Phone Number">
+                      </div>
+                    </div>
+                    
+                   
+                  </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                      <button type="submit" class="btn btn-success" id="button1">Add New Doctor</button>
+                    </div>
+                    <!-- /.box-footer -->
+                  </form>
+                </div>
+                </div>
+                <!-- /.box -->
+                <div class="col-md-6">
+                  <!-- Horizontal Form -->
+                  <div class="box box-info">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Modify Doctor Details</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal">
+                      <div class="box-body">
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control disabledboxes" id="emailId" placeholder="Enter your email">
+                        </div>
+                      </div>
+  
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Sex</label>
+                        <div class="col-sm-8">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                              Male
+                            </label>
+                          </div>
+            
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                              Female
+                            </label>
+                          </div>
+            
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                              Others
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Address</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control disabledboxes" id="pwd" placeholder="Enter Address">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Phone Number</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control disabledboxes" id="pwd" placeholder="Enter Phone Number">
+                        </div>
+                      </div>
+                      
+                     
+                    </div>
+                      <!-- /.box-body -->
+                      <div class="box-footer">
+                        <button type="submit" class="btn btn-success" id="button1">Modify Doctor Details</button>
+                      </div>
+                      <!-- /.box-footer -->
+                    </form>
+                  </div>
+                  </div>
+        </div> 
+        <div class="row">
+          <div class="col-md-6">
+              <!-- Horizontal Form -->
+              <div class="box box-info">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Add New Test</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form class="form-horizontal">
+                  <div class="box-body">
+                      <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">List of Test</label>
+                          <div class="col-sm-8">
+                            <!-- <input type="text" class="form-control disabledboxes" id="assignedDoctor" placeholder="ABC"> -->
+                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                  <option selected="selected">Sonography</option>
+                                  <option>X-ray</option>
+                                  <option>Echo3</option>
+                                </select>
+                          </div>
+                        </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-3 control-label">Name</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control disabledboxes" id="emailId" placeholder="Enter name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-3 control-label">Rate</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control disabledboxes" id="rate" placeholder="Enter rate">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-3 control-label">Doctor</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control disabledboxes" id="doctor" placeholder="Enter doctor name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-3 control-label">Percentage %</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control disabledboxes" id="percentage" placeholder="Enter percentage">
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+                
+                  <!-- /.box-body -->
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-success" id="button1">Add Test</button>
+                  </div>
+                  <!-- /.box-footer -->
+                </form>
+              </div>
+              </div>
+              <div class="col-md-6">
+                  <!-- Horizontal Form -->
+                  <div class="box box-info">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Modify Test</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal">
+                      <div class="box-body">
+                          <div class="form-group">
+                              <label for="" class="col-sm-3 control-label">List of Test</label>
+                              <div class="col-sm-8">
+                                <!-- <input type="text" class="form-control disabledboxes" id="assignedDoctor" placeholder="ABC"> -->
+                                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                      <option selected="selected">Sonography</option>
+                                      <option>X-ray</option>
+                                      <option>Echo3</option>
+                                    </select>
+                              </div>
+                            </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control disabledboxes" id="emailId" placeholder="Enter name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Rate</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control disabledboxes" id="rate" placeholder="Enter rate">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Doctor</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control disabledboxes" id="doctor" placeholder="Enter doctor name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Percentage %</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control disabledboxes" id="percentage" placeholder="Enter percentage">
+                        </div>
+                      </div>
+                      
+                     
+                    </div>
+                    
+                      <!-- /.box-body -->
+                      <div class="box-footer">
+                        <button type="submit" class="btn btn-success" id="button1">Modify Test</button>
+                      </div>
+                      <!-- /.box-footer -->
+                    </form>
+                  </div>
+                  </div>
+            <!-- /. tools -->
+          </div>
+      </section>
+    <!-- Main content -->
+    <!-- <section class="content"> -->
+      <!-- Info boxes -->
+<!--       
+    </section> -->
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Bellurbis</b>
+    </div>
+    <strong>Copyright &copy; 2018-2019 </strong> All rights reserved.
+  </footer>
+
+  
+
+</div>
+<!-- ./wrapper -->
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- Sparkline -->
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- ChartJS -->
+<script src="bower_components/chart.js/Chart.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard2.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>
